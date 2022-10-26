@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exploring Events</h1>
+    <button onclick="alert(7)">click me(ami alert kre dekhabo) </button>
+
+    <button id="Button">(click me click me)console a giye dekho tmi amk koto bar click korso </button>
+
+    <button onclick="bodycolorchange()">if you click me body color is change </button>
+
+    <button onclick="colorchange()">if you click me p tag color is change </button>
+
+
+    <!-- js code here -->
+    <script>
+        const secondButton = document.getElementById('Button');
+        secondButton.onclick =function(){
+            console.log('why you click me!')
+        }
+
+      function bodycolorchange(){ 
+       document.body.style.backgroundColor = 'lightcyan';
+    }
+    function colorchange(){
+        document.body.style.color ='red';
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  div#container>ul#mylist>li.item*5>lorem10    then click tab   -->
+    <div id="container">
+        <ul id="mylist">
+            <h1>My List</h1>
+            <li class="item" id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, nihil!</li>
+            <li class="item" onclick="hand()">Vero quia eligendi itaque reprehenderit aliquid? Nemo nobis modi repellendus.</li>
+            <li class="item" onclick ="ul()">Odit natus quae ipsum eum hic deserunt molestias! Nam, sapiente.</li>
+            <li class="item">Itaque in consequuntur maiores magnam ipsam repudiandae iste cum? Dolores.</li>
+            <li class="item">Aliquid, repellendus recusandae! Vitae dolorem eos veritatis harum odio quis!</li>
+        </ul>
+    </div>
+<!-- fast list er js code -->
+<!-- ans console a giye dekhte hbe -->
+    <script>
+        document.getElementById('first').addEventListener('click',function(even){
+            console.log('first item click');
+        })
+    </script>
+<!-- second lisk er js code -->
+    <script>
+        function hand(){
+            console.log("2nd item a click kora hoyeche")
+        }
+    </script>
+    <!-- 3rd lisk er js code -->
+    <script>
+        function ul(){
+            console.log("3rd item a click kora hoyche")
+            console.log("ul k o click kora hoyeche")
+        }
+    </script>
+</body>
+</html>
